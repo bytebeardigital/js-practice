@@ -1,3 +1,66 @@
+@import './variables';
+@import './layouts';
+@import './components';
+
+body {
+  font-family: $primary-font;
+}
+p {
+  margin-bottom: 0 !important;
+}
 #root {
-    font-weight: bold;
+  font-weight: bold;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  border: 2px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background-color: $primary;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+
+  &__navigation {
+    margin-top: 50px;
+    .main-link {
+      margin-bottom: 12px;
+      font-size: 1em;
+      letter-spacing: 2px;
+    }
+
+    i {
+      font-size: 1.15em;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    border-top: 1px solid rgba($white, 0.25);
+  }
+}
+
+.userInfo {
+  &__headshot {
+    border-radius: 50%;
+    max-width: 175px;
+    width: 100%;
+    object-fit: cover;
+    max-height: 350px;
+  }
+  &--username {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: $bold;
+    font-size: 2sem;
+  }
 }

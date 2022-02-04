@@ -1,0 +1,23 @@
+//DASHBOARD
+.dash {
+  &__heading {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-family: $primary-font;
+    font-weight: $bold;
+    margin-bottom: 30px !important;
+    font-size: 2.25em;
+
+    &:after {
+      content: '';
+      display: block;
+      border-bottom: 2.5px solid $secondary;
+      width: 50%;
+    }
+  }
+}
+// MAIN CONTENT INNER
+.main-content {
+  width: 100%;
+  padding: 32px !important;
+}
